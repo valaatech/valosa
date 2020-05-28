@@ -1,0 +1,21 @@
+{
+  "name": "@valos/valosa-spindle",
+  "version": "0.1.0",
+  "valos": {
+    "type": "spindle",
+    "domain": "@valos/kernel"
+  },
+  "description": "ValOS authority spindle",
+  "author": "Valaa Technologies Ltd",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/valaatech/valosa.git",
+  "private": false,
+  "main": "index.js",
+  "devDependencies": {
+    "@valos/type-spindle": ">=0.35.0-rc.16"
+  },
+  "dependencies": {
+    "@valos/raem": "^0.34.1",
+    "@valos/sourcerer": "^0.35.0-prerelease.1"
+  }
+}
