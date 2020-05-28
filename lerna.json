@@ -5,9 +5,9 @@
   "useWorkspaces": true,
   "command": {
     "version": {
-      "bump": "minor",
-      "preid": "",
-      "allowBranch": "release/*"
+      "bump": "preminor",
+      "preid": "prerelease",
+      "allowBranch": "prerelease/0.2"
     }
   }
 }
