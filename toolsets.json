@@ -1,0 +1,14 @@
+{
+  "@valos/type-vault": {
+    "inUse": "always",
+    "tools": {
+      "docs": {
+        "inUse": true,
+        "regenerateOnRelease": true,
+        "docsBaseIRI": "http://github.io/valaatech/valosa",
+        "authors": {},
+        "introduction": []
+      }
+    }
+  }
+}

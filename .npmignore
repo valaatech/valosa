@@ -1,0 +1,38 @@
+# This file is a template for individual vault projects which get
+# published and which don't have an .npmignore of their own.
+
+*.swp
+*~
+*debug.log
+*error.log
+*.lock
+*.test.js
+
+.yalc
+coverage
+dist
+temp
+dev
+env
+
+# Never publish src to ensure that the source assembly is properly
+# executed. Assembly should use the package root as the source root.
+/src
+
+# Spurious.
+/packages
+
+# A bit spammy. Usually the packages themselves only have .babelrc/.js
+# if even that. No harm in blocking any of the following anyway.
+
+/.babelrc
+/.babelrc.js
+/babel.config.js
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/.flowconfig
+/.vscode
+/*config.js
+/package-lock.json
+/CONTRIBUTING.md

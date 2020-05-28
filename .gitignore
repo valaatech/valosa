@@ -1,0 +1,14 @@
+*.swp
+*~
+*debug.log
+*error.log
+*.zip
+
+.yalc
+coverage
+dist
+node_modules
+temp
+yalc.lock
+dev
+env

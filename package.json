@@ -1,0 +1,25 @@
+{
+  "name": "@valos/valosa-vault",
+  "version": "0.1.0",
+  "valos": {
+    "type": "vault",
+    "domain": "@valos/kernel"
+  },
+  "description": "ValOS open source authority",
+  "main": "index.js",
+  "repository": "https://github.com/valaatech/valosa.git",
+  "author": "Valaa Technologies Ltd",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@cyclonedx/bom": "^1.1.3",
+    "@valos/revdoc": ">=0.35.0-rc.15",
+    "@valos/sbomdoc": ">=0.35.0-rc.15",
+    "@valos/type-vault": ">=0.35.0-rc.15",
+    "@valos/vdoc": ">=0.35.0-rc.15",
+    "xml-js": "^1.6.11"
+  }
+}

@@ -1,0 +1,10 @@
+[options]
+esproposal.decorators=ignore
+module.name_mapper='^~\/\(.*\)' -> '<PROJECT_ROOT>/packages/\1'
+suppress_comment= \\(.\\|\n\\)*\\$FlowSupress
+[ignore]
+.*/node_modules/.*
+.*/.yalc/.*
+.*/.dist/.*
+.*/.revelations/.*
+.*/.valma.bin/.*
