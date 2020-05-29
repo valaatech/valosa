@@ -1,0 +1,25 @@
+{
+  "name": "@valos/valosa-test-site",
+  "version": "0.32.0",
+  "description": "Valosa Dev Zero Revelation",
+  "license": "UNLICENSED",
+  "author": "Valaa Technologies Ltd",
+  "private": true,
+
+  "valos": { "engine": { "name": "@valos/inspire", "version": "0.32.0" } },
+  "gateway": {
+    "version": "0.32.0",
+    "runtime": "valos/inspire/valos-inspire.js",
+    "authorityConfigs": { "!!!": "./authorityConfigs.json" },
+    "verbosity": 1,
+    "falseProphet": { "verbosity": 1 },
+    "scribe": { "verbosity": 1 },
+    "oracle": { "verbosity": 1 }
+  },
+  "prologue": {
+    "rootChronicleURI": "valaa-local:?id=@$~raw.lcl-c986ddf3-917b-48da-9a58-eb495093e34c@@",
+    "partitionInfos": { "!!!": "./valos/partitionInfos.json" },
+    "bvobInfos": { "!!!": "./valos/bvobInfos.json" },
+    "bvobBuffers": { "!!!": "./valos/bvobBuffers.json" }
+  }
+}

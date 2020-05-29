@@ -1,0 +1,16 @@
+{
+  "valog://0.0.0.0/test/": {
+    "authorityURI": "valog://0.0.0.0/test/",
+    "type": "valog",
+    "name": "Valosa local authority",
+    "eventVersion": "0.2",
+    "verbosity": 1,
+    "fixedChronicleResponse": { "status": 200 },
+    "test": true,
+    "rest": {
+      "endpoint": "https://0.0.0.0/test",
+      "verifyEndpoint": "https://0.0.0.0/test/verify-blob"
+    }
+  }
+}
+  

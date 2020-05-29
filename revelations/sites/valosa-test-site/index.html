@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ValOS local Zero with AWS</title>
+        <link rel="icon" href="favicon.ico?a=1" type="image/x-icon" />
+        <style>
+          html, body, #valos-inspire--main-container {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            transition: all 0.5s ease;
+          }
+          *, *:before, *:after {
+            box-sizing: inherit;
+          }
+        </style>
+        <link rel="preload" href="/valos/inspire/valos-inspire.js" as="script"/>
+        <link rel="preload" href="/valos/inspire/aws-scheme-spindle.js" as="script"/>
+        <link rel="preload" href="revela.json" as="fetch" crossorigin="anonymous"/>
+    </head>
+<body>
+    <div id="valos-inspire--main-container"></div>
+    <!-- TODO: cdn.valaa.com? -->
+    <script src="/valos/inspire/valos-inspire.js"></script>
+    <script src="/valos/inspire/aws-scheme-spindle.js"></script>
+    <script>
+      valos.createInspireGateway({ "!!!": "./revela.json" }, {
+        gateway: {
+          verbosity: 1,
+        },
+        prologue: {
+          rootChronicleURI: valos.getURIQueryField(document.location, "chronicle"),
+          rootPartitionURI: valos.getURIQueryField(document.location, "partition"),
+        },
+      }).then(function (gateway) {
+        valos.views = gateway.createAndConnectViewsToDOM({
+          inspireMain: {
+            name: "AWS local Zero with AWS Main",
+            focus: gateway.getRootFocusURI() || gateway.getRootChronicleURI(),
+            contextLensProperty: ["EDITOR_LENS", "LENS"],
+            setTitleKuery: "name",
+            container: document.querySelector("#valos-inspire--main-container"),
+            viewRootId: "valos-inspire--main-root",
+            size: { width: window.innerWidth, height: window.innerHeight, scale: 1 },
+          },
+        });
+      });
+    </script>
+</body>
+</html>
