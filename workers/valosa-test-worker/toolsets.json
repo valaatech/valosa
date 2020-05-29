@@ -1,0 +1,26 @@
+{
+  "@valos/type-worker": {
+    "inUse": "always",
+    "rootChronicleURI": "",
+    "commands": {
+      "perspire": {
+        "options": {
+          "keepalive": 5,
+          "output": "dist/perspire/vdomSnapshot.html",
+          "spindles": [ "@valos/web-spindle", 
+                        "@valos/valosa-spindle"]
+        }
+      }
+    },
+    "tools": {
+      "@valos/web-spindle": {
+        "inUse": true
+      }
+    }
+  },
+  "@valos/web-spindle": {
+    "port": "443",
+    "address": "0.0.0.0",
+    "inUse": true
+  }
+}

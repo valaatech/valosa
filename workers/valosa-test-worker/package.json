@@ -1,0 +1,18 @@
+{
+  "name": "@valos/valosa-test-worker",
+  "version": "0.1.0",
+  "valos": {
+    "type": "worker",
+    "domain": "@valos/kernel"
+  },
+  "description": "Perpire worker to run Valosa",
+  "author": "Valaa Technologies Ltd",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/valaatech/valosa.git",
+  "private": false,
+  "main": "index.js",
+  "devDependencies": {
+    "@valos/type-worker": ">=0.35.0-rc.16",
+    "@valos/web-spindle": ">=0.35.0-rc.16"
+  }
+}
